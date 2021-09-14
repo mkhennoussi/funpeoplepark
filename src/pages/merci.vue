@@ -11,9 +11,9 @@
         </h1>
       </div>
       <div class="text-center text-white p-4">
-        <nuxt-link to="/" class="btn ">
+        <router-link to="/" class="btn ">
           Retour sur la page d'accueil
-        </nuxt-link>
+        </router-link>
       </div>
     </div>
   </div>

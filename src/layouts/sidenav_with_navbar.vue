@@ -25,7 +25,6 @@ const { isOpen, toggleDrawer } = useUI()
         <router-view>
         </router-view>
       </div>
-      <FooterApp />
     </div>
   </div>
 </template>

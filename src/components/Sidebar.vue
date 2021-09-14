@@ -10,7 +10,7 @@ const { closeDrawer } = useUI()
     <img :src="heroImage" alt class="w-full h-full object-cover " />
     <div class="flex flex-col w-full max-w-xs p-4">
       <nav class="flex flex-col w-full space-y-3">
-        <router-link
+        <!-- <router-link
           to="/"
           class="sidenav_menu_item bg-secondary-500"
           active-class="bg-secondary-500 text-white"
@@ -20,44 +20,46 @@ const { closeDrawer } = useUI()
             <CarbonHome class="group-hover:text-white" />
           </span>
           <span>Tableau de bord</span>
-        </router-link>
+        </router-link> -->
 
         <div class="my-px">
-          <span class="flex font-medium text-sm text-gray-400 px-4 my-4 uppercase">Mon compte</span>
+          <span class="flex font-medium text-sm text-gray-400 px-4 my-4 uppercase">Menu</span>
         </div>
         <router-link
-          to="/profile"
+          to="#prestations"
           class="sidenav_menu_item group"
           active-class="bg-secondary-500text-white "
           @click="closeDrawer"
         >
           <span class="flex text-lg text-white mr-3">
-            <CarbonUser class="group-hover:text-white" />
+            <CarbonCarouselHorizontal class="group-hover:text-white" />
           </span>
-          <span>Profil</span>
+          <span>Prestations</span>
         </router-link>
 
         <router-link
-          to="/auth/login"
+          to="#tarifs"
           class="sidenav_menu_item group"
           active-class="bg-secondary-500text-white"
           @click="closeDrawer"
         >
           <span class="flex text-lg text-white mr-3">
-            <CarbonSettings class="group-hover:text-white" />
+            <CarbonShoppingCatalog class="group-hover:text-white" />
           </span>
-          <span>Login</span>
+          <span>Tarifs</span>
         </router-link>
 
-        <div
-          class="sidenav_menu_item group cursor-pointer"
+        <router-link
+          to="#contact"
+          class="sidenav_menu_item group"
           active-class="bg-secondary-500text-white"
+          @click="closeDrawer"
         >
           <span class="flex text-lg text-white mr-3">
-            <CarbonLogout class="group-hover:text-white" />
+            <CarbonEmail class="group-hover:text-white" />
           </span>
-          <span>Déconnexion</span>
-        </div>
+          <span>Contact</span>
+        </router-link>
       </nav>
     </div>
   </div>

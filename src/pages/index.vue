@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import heroImage from '~/assets/images/fun_people_park_sainte_small.jpg'
-import CategoryTitle from '~/components/CategoryTitle.vue'
 </script>
 <template>
   <div class="flex justify-center items-center bg-gradient-to-t h-screen -mt-16 relative">
@@ -8,7 +7,7 @@ import CategoryTitle from '~/components/CategoryTitle.vue'
     <div class="from-black via-black/10 to-transparent bg-gradient-to-t absolute inset-0"></div>
   </div>
   <div class="flex flex-col w-full max-w-9xl mx-auto p-6 lg:(px-16 py-32)">
-    <category-title title="Nos Prestations" subtitle="Découvrez l'ensemble de nos prestations ci-dessous" />
+    <CategoryTitle id="prestations" title="Nos Prestations" subtitle="Découvrez l'ensemble de nos prestations ci-dessous" />
     <div class="w-full lg:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <ServiceCard
         title="Enterrement de vie de célibataire"
@@ -28,8 +27,12 @@ import CategoryTitle from '~/components/CategoryTitle.vue'
     </div>
   </div>
   <div class="flex flex-col w-full max-w-9xl mx-auto p-6 lg:(px-16 pt-32)">
-    <category-title title="Nos Tarifs" subtitle="Découvrez l'ensemble de nos tarifs ci-dessous" />
+    <CategoryTitle id="tarifs" title="Nos Tarifs" subtitle="Découvrez l'ensemble de nos tarifs ci-dessous" />
     <pricing />
+  </div>
+  <div class="flex flex-col w-full max-w-9xl mx-auto p-6 lg:(px-16 pt-32)">
+    <CategoryTitle id="contact" title="Contact" subtitle="Discuttons ensemble de vos projets afin se découvrir comment nous pouvons vous accompagner." />
+    <FooterApp />
   </div>
 </template>
 

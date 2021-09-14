@@ -6,3 +6,5 @@ preview:
 	yarn preview
 preview-https:
 	yarn preview-https
+deploy:
+	netlify deploy --prod
