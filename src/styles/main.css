@@ -5,10 +5,7 @@ body,
   margin: 0;
   padding: 0;
   background: black;
-}
-
-html.dark {
-  background: #121212;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #nprogress {
@@ -46,7 +43,7 @@ html.dark {
   left: -2px;
   top: -2px;
   z-index: -1;
-  background-image: linear-gradient(145deg, #2c95d1, #2160d6, #6b48af, #d23d80);
+  background-image: linear-gradient(145deg, #14DC7E, #F8100F, #F8100F);
   background-size: 400%;
   animation: move 3s infinite ease-in-out;
 }
@@ -57,4 +54,12 @@ html.dark {
 
 .card-glow:hover::before {
   @apply filter blur-xl;
+}
+
+.label {
+  @apply block mb-2 text-white;
+}
+
+.input {
+  @apply w-full px-3 py-2 placeholder-dark-300 text-black border border-secondary-300 rounded-md focus:outline-none focus:ring focus:ring-secondary-500 focus:border-primary;
 }

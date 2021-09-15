@@ -6,7 +6,7 @@ const { toggleDrawer } = useUI()
 </script>
 
 <template>
-  <div class="fixed w-full h-16 text-light-100 backdrop-blur-lg backdrop-filter flex shadow-lg shadow-primary-400 z-10">
+  <div class="fixed w-full h-16 text-light-100 backdrop-blur-lg backdrop-filter flex shadow-lg shadow-primary-400 z-20">
     <div class="flex items-center justify-between flex-1" lg="px-8">
       <div class="flex">
         <router-link to="/" class="flex items-center space-x-2 ml-4" lg="ml-0">
@@ -15,11 +15,46 @@ const { toggleDrawer } = useUI()
       </div>
       <button
         ref="target"
-        class="focus:(outline-none bg-primary-300) hover:bg-primary-300 p-4 active:bg-primary-400"
+        lg="hidden"
+        class="focus:(outline-none bg-secondary-500) hover:bg-secondary-500 p-4 active:bg-secondary-400"
         @click="toggleDrawer"
       >
         <CarbonMenu class="text-2xl" />
       </button>
+      <div class="flex space-x-3 <lg:hidden">
+        <router-link
+          to="#prestations"
+          class="sidenav_menu_item group"
+          active-class="bg-secondary-500text-white "
+        >
+          <span class="flex text-lg text-white mr-3">
+            <CarbonCarouselHorizontal class="group-hover:text-white" />
+          </span>
+          <span>Prestations</span>
+        </router-link>
+
+        <router-link
+          to="#tarifs"
+          class="sidenav_menu_item group"
+          active-class="bg-secondary-500text-white"
+        >
+          <span class="flex text-lg text-white mr-3">
+            <CarbonShoppingCatalog class="group-hover:text-white" />
+          </span>
+          <span>Tarifs</span>
+        </router-link>
+
+        <router-link
+          to="#contact"
+          class="sidenav_menu_item group"
+          active-class="bg-secondary-500text-white"
+        >
+          <span class="flex text-lg text-white mr-3">
+            <CarbonEmail class="group-hover:text-white" />
+          </span>
+          <span>Contact</span>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

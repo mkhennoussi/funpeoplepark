@@ -6,7 +6,7 @@ const { closeDrawer } = useUI()
 </script>
 
 <template>
-  <div class="flex flex-col justify-center z-5">
+  <div class="flex flex-col justify-center z-30">
     <img :src="heroImage" alt class="w-full h-full object-cover " />
     <div class="flex flex-col w-full max-w-xs p-4">
       <nav class="flex flex-col w-full space-y-3">
