@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useUI } from '~/logic/ui'
-import heroImage from '~/assets/images/logo_fun_people_park.png'
+import heroImage from '~/assets/images/logo_fun_people_park.png?webp'
 
 const { closeDrawer } = useUI()
 </script>

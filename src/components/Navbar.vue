@@ -15,6 +15,7 @@ const { toggleDrawer } = useUI()
       </div>
       <button
         ref="target"
+        aria-label="Bouton menu"
         lg="hidden"
         class="focus:(outline-none bg-secondary-500) hover:bg-secondary-500 p-4 active:bg-secondary-400"
         @click="toggleDrawer"

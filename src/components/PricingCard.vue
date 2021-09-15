@@ -13,9 +13,9 @@ defineProps<{imageUrl: string; title: string; description: string; price: string
       :src="imageUrl"
     />
     <div class="flex-grow p-8 lg:px-2 sm:pl-8 bg-true-gray-800 rounded-lg">
-      <h3 class="text-gray-200 text-xl font-semibold uppercase mb-3">
+      <div class="text-gray-200 text-xl font-semibold uppercase mb-3">
         {{ title }}
-      </h3>
+      </div>
       <p
         class="mb-4 text-gray-200"
       >

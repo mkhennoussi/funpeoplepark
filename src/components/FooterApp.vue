@@ -1,6 +1,6 @@
 <template>
   <section class="text-gray-600 body-font relative">
-    <div class="flex flex-col justify-center items-center relative z-10 bg-black ">
+    <div class="flex flex-col justify-center items-center relative z-0 bg-black ">
       <form
         name="contact"
         method="POST"

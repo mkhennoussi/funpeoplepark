@@ -18,7 +18,7 @@ const { isOpen, toggleDrawer } = useUI()
         class="flex-1 min-h-[calc(100vh-64px)]"
       >
         <div
-          class="absolute inset-0 from-primary-500/50 to-secondary-500/50 bg-blend-overlay bg-gradient-to-r bggradient transition-all duration-500 z-1"
+          class="absolute inset-0 from-primary-500/50 to-secondary-500/50 bg-blend-overlay bg-gradient-to-r bggradient transition-all duration-500 z-8"
           :class="{ 'hidden': !isOpen }"
           @click="toggleDrawer"
         ></div>

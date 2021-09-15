@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import heroImage from '~/assets/images/fun_people_park_sainte_small.jpg'
-import happyCar from '~/assets/images/happy_car.png'
+import heroImage from '~/assets/images/fun_people_park_sainte_small.jpg?webp'
+import happyCar from '~/assets/images/happy_car.png?webp'
 </script>
 <template>
   <div class="flex justify-center items-center bg-gradient-to-t h-screen -mt-16 relative">
@@ -12,13 +12,13 @@ import happyCar from '~/assets/images/happy_car.png'
     <div class="w-full lg:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <ServiceCard
         title="Anniversaire"
-        subtitle="team du marié"
-        description="C'est le jour pour surprendre votre ami ! Faites-le courir, sauter, tirer ou tout simplement se marrer avant le jour J. Vivez, tous ensemble, un moment fun avant que votre ami dise OUI pour la vie !"
+        subtitle="Enfants ou adultes !"
+        description="C'est le jour de votre anniversaire ! Faites-le courir, sauter, tirer ou tout simplement se marrer avant le jour J. Vivez, tous ensemble, un moment fun avant que votre ami dise OUI pour la vie !"
       />
       <ServiceCard
-        title="Amis, collègues ou famille"
-        subtitle="Amis, collègues ou famille"
-        description="Resto entre amis, c'est bien, soirée ciné, c'est bien aussi … du fun chez Bump c'est beaucoup mieux ! Challengez-vous autour d'une partie de foot dans des bulles ou dans des batailles épiques de Laser ou d'Archery."
+        title="Évènements"
+        subtitle="Sportifs ou Scolaires"
+        description="Resto entre amis, c'est bien, soirée ciné, c'est bien aussi … du fun chez FunPeoplePark c'est beaucoup mieux ! Challengez-vous autour d'une course épique en Rolling Car."
       />
       <ServiceCard
         title="Amis, collègues ou famille"
@@ -35,7 +35,7 @@ import happyCar from '~/assets/images/happy_car.png'
     </div>
   </div>
   <div class="flex flex-col w-full max-w-9xl mx-auto p-6 lg:(px-16 pt-32)">
-    <CategoryTitle id="contact" title="Contact" subtitle="Discuttons ensemble de vos projets afin se découvrir comment nous pouvons vous accompagner." />
+    <CategoryTitle id="contact" title="Contact" subtitle="Discutons ensemble de vos projets afin se découvrir comment nous pouvons vous accompagner." />
     <FooterApp />
   </div>
 </template>
