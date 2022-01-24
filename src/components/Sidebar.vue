@@ -22,6 +22,9 @@ const { closeDrawer } = useUI()
           <span>Tableau de bord</span>
         </router-link> -->
 
+        <div class="my-px text-center ">
+          <span class="flex text-lg justify-center text-white font-bold italic my-4">Une activité renversante !</span>
+        </div>
         <div class="my-px">
           <span class="flex font-medium text-sm text-gray-400 px-4 my-4 uppercase">Menu</span>
         </div>
@@ -34,7 +37,7 @@ const { closeDrawer } = useUI()
           <span class="flex text-lg text-white mr-3">
             <CarbonCarouselHorizontal class="group-hover:text-white" />
           </span>
-          <span>Prestations</span>
+          <span>Nos Activités</span>
         </router-link>
 
         <router-link
@@ -46,7 +49,7 @@ const { closeDrawer } = useUI()
           <span class="flex text-lg text-white mr-3">
             <CarbonShoppingCatalog class="group-hover:text-white" />
           </span>
-          <span>Tarifs</span>
+          <span>Nos Prestations</span>
         </router-link>
 
         <router-link

@@ -8,30 +8,25 @@ import happyCar from '~/assets/images/happy_car.png?webp'
     <div class="from-black via-black/10 to-transparent bg-gradient-to-t absolute inset-0"></div>
   </div>
   <div class="flex flex-col w-full max-w-9xl mx-auto p-6 lg:(px-16 pt-32)">
-    <CategoryTitle id="prestations" title="Nos Prestations" subtitle="Découvrez l'ensemble de nos prestations ci-dessous" />
-    <div class="w-full lg:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <CategoryTitle id="prestations" title="Nos Activités" subtitle="Fun People Park vous propose ces deux principales attractions : " />
+    <div class="text-justify lg:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <ServiceCard
-        title="Anniversaire"
-        subtitle="Enfants ou adultes !"
-        description="C'est le jour de votre anniversaire ! Faites-le courir, sauter, tirer ou tout simplement se marrer avant le jour J. Vivez, tous ensemble, un moment fun avant que votre ami dise OUI pour la vie !"
+        title="Happy Car"
+        description="Idéal pour les enfants à partir de 2 ans, ce manège est une balançoire qui se déplace pour le plaisir des petits et des grands !"
       />
       <ServiceCard
-        title="Évènements"
-        subtitle="Sportifs ou Scolaires"
-        description="Resto entre amis, c'est bien, soirée ciné, c'est bien aussi … du fun chez FunPeoplePark c'est beaucoup mieux ! Challengez-vous autour d'une course épique en Rolling Car."
-      />
-      <ServiceCard
-        title="Amis, collègues ou famille"
-        subtitle="Amis, collègues ou famille"
-        description="Resto entre amis, c'est bien, soirée ciné, c'est bien aussi … du fun chez Bump c'est beaucoup mieux ! Challengez-vous autour d'une partie de foot dans des bulles ou dans des batailles épiques de Laser ou d'Archery."
+        title="Rolling Car"
+        description="Parfait pour les amateurs de sensations fortes, ce manège mobile à la capacité de vous faire tourner à 360 degrés !"
       />
     </div>
   </div>
   <div class="flex flex-col w-full max-w-9xl mx-auto p-6 lg:(px-16 pt-32)">
-    <CategoryTitle id="tarifs" title="Nos Tarifs" subtitle="Découvrez l'ensemble de nos tarifs ci-dessous" />
+    <CategoryTitle id="tarifs" title="Nos Prestations" subtitle="Découvrez l'ensemble de nos prestations tarifées à l'heure" />
     <div class="w-full lg:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <PricingCard :image-url="happyCar" title="Happy Car" description="Happy Car est une attraction permettant de s'amuser tout en étant" price="5€" />
-      <PricingCard :image-url="happyCar" title="Rolling Car" description="Rolling car est une attraction permettant de s'amuser tout en étant" price="8€" />
+      <PricingCard :image-url="happyCar" title="Happy Car" price="À partir de 60 €" />
+      <PricingCard :image-url="happyCar" title="Rolling Car" price="À partir de 60 €" />
+      <PricingCard :image-url="happyCar" title="Happy Car + Rolling Car" price="À partir de 60 €" />
+      <PricingCard :image-url="happyCar" title="Location de piste" price="À partir de 60 €" />
     </div>
   </div>
   <div class="flex flex-col w-full max-w-9xl mx-auto p-6 lg:(px-16 pt-32)">

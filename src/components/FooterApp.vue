@@ -14,35 +14,32 @@
           <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
         </p>
         <div class="mb-6">
-          <label for="name" class="label">Votre Nom</label>
+          <label for="name" class="label">Nom</label>
           <input
             id="name"
             type="text"
             name="name"
-            placeholder="John Doe"
             required
             class="input"
           />
         </div>
         <div class="mb-6">
-          <label for="email" class="label">Votre Email</label>
+          <label for="email" class="label">Email</label>
           <input
             id="email"
             type="email"
             name="email"
-            placeholder="johndoe@gmail.com"
             required
-            class="input"
+            class="input placeholder-italic"
           />
         </div>
         <div class="mb-6">
-          <label for="message" class="label">Votre Message</label>
+          <label for="message" class="label">Message</label>
 
           <textarea
             id="message"
             rows="5"
             name="message"
-            placeholder="Votre message"
             class="input"
             required
           ></textarea>
@@ -60,16 +57,14 @@
         <p class="leading-normal my-5 text-gray-400">
           07 83 44 64 30
           <br> 04 69 35 54 17
+          <br> funpeoplepark@gmail.com
         </p>
         <span class="inline-flex text-3xl items-center justify-center">
-          <a class="text-gray-500">
+          <a target="_blank" rel="noopener noreferrer" class="text-gray-500" href="https://www.facebook.com/Fun-People-Park-100227279082151">
             <CarbonLogoFacebook />
           </a>
-          <a class="ml-4 text-gray-500">
+          <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/funpeoplepark" class="ml-4 text-gray-500">
             <CarbonLogoInstagram />
-          </a>
-          <a class="ml-4 text-gray-500">
-            <CarbonLogoYoutube />
           </a>
         </span>
       </div>

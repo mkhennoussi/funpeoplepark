@@ -31,7 +31,7 @@ const { toggleDrawer } = useUI()
           <span class="flex text-lg text-white mr-3">
             <CarbonCarouselHorizontal class="group-hover:text-white" />
           </span>
-          <span>Prestations</span>
+          <span>Activités</span>
         </router-link>
 
         <router-link
@@ -42,7 +42,7 @@ const { toggleDrawer } = useUI()
           <span class="flex text-lg text-white mr-3">
             <CarbonShoppingCatalog class="group-hover:text-white" />
           </span>
-          <span>Tarifs</span>
+          <span>Prestations</span>
         </router-link>
 
         <router-link
